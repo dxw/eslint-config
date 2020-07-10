@@ -1,4 +1,4 @@
-# @wearedxw/eslint-config
+# `@wearedxw/eslint-config`
 
 Standard ESLint configuration for dxw projects
 
@@ -27,8 +27,8 @@ project:
 
 ## Caveats
 
-This configuration assumes that you're writing (and therefore linting) ES6 and
-that you're using dxw's other standard tools:
+This configuration assumes that you're writing (and therefore linting) ES2020
+and that you're using dxw's other standard tools:
 
 - Prettier
 - Jest
