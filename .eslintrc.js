@@ -12,6 +12,7 @@ module.exports = {
   parserOptions: {
     sourceType: "module",
   },
+  reportUnusedDisableDirectives: true,
   overrides: [
     {
       files: ["**/*.ts?(x)"],

@@ -8,6 +8,10 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Changed
+
+- Enabled `reportUnusedDisableDirectives` by default
+
 ### Fixed
 
 - Switched plugins as
