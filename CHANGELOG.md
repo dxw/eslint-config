@@ -8,7 +8,14 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Fixed
+
+- Switched plugins as
+  [peer dependencies](https://eslint.org/docs/developer-guide/shareable-configs#publishing-a-shareable-config)
+
+## [1.0.0]
+
 Initial release.
 
-[unreleased]: https://github.com/dxw/eslint-config/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/dxw/eslint-config/releases/tag/v0.1.0
+[unreleased]: https://github.com/dxw/eslint-config/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/dxw/eslint-config/releases/tag/v1.0.0
