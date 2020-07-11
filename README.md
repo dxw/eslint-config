@@ -34,7 +34,3 @@ and that you're using dxw's other standard tools:
 - Jest
 
 You may need some additional configuration if that's not the case.
-
-## Related
-
-- [`@wearedxw/eslint-config-react`](https://github.com/dxw/eslint-config-react)
