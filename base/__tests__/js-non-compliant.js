@@ -1,6 +1,6 @@
 const { ESLint } = require("eslint");
 
-const fixturePath = "__fixtures__/non-compliant.js";
+const fixturePath = "base/__fixtures__/non-compliant.js";
 
 it("has issues", async () => {
   const eslint = new ESLint({ ignore: false });
@@ -17,7 +17,7 @@ it("has issues", async () => {
     Array [
       Object {
         "errorCount": 1,
-        "filePath": "__fixtures__/non-compliant.js",
+        "filePath": "base/__fixtures__/non-compliant.js",
         "fixableErrorCount": 0,
         "fixableWarningCount": 0,
         "messages": Array [
