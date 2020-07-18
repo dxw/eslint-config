@@ -7,5 +7,3 @@ const func = () => {
 export function exportedFunc() {
   return false;
 }
-
-export default "default export";

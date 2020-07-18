@@ -3,9 +3,3 @@ const func = () => {
 
   return value;
 };
-
-export function exportedFunc() {
-  return false;
-}
-
-export default "default export";

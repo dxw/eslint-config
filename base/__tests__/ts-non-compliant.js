@@ -7,11 +7,13 @@ it("has issues", async () => {
 
   const results = await eslint.lintFiles([fixturePath]);
 
-  const idempotentResults = results.map((result) =>
-    result.filePath.endsWith(fixturePath)
+  const idempotentResults = results.map((result) => {
+    delete result.source;
+
+    return result.filePath.endsWith(fixturePath)
       ? { ...result, filePath: fixturePath }
-      : result
-  );
+      : result;
+  });
 
   expect(idempotentResults).toMatchInlineSnapshot(`
     Array [
@@ -62,18 +64,6 @@ it("has issues", async () => {
             "severity": 1,
           },
         ],
-        "source": "const func = () => {
-      let value = \\"some value\\";
-
-      return value;
-    };
-
-    export function exportedFunc() {
-      return false;
-    }
-
-    export default \\"default export\\";
-    ",
         "usedDeprecatedRules": Array [],
         "warningCount": 2,
       },

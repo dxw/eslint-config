@@ -7,11 +7,13 @@ it("passes", async () => {
 
   const results = await eslint.lintFiles([fixturePath]);
 
-  const idempotentResults = results.map((result) =>
-    result.filePath.endsWith(fixturePath)
+  const idempotentResults = results.map((result) => {
+    delete result.source;
+
+    return result.filePath.endsWith(fixturePath)
       ? { ...result, filePath: fixturePath }
-      : result
-  );
+      : result;
+  });
 
   expect(idempotentResults).toMatchInlineSnapshot(`
     Array [
