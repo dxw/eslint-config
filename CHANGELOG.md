@@ -11,6 +11,7 @@ and this project adheres to
 ### Changed
 
 - Enabled `reportUnusedDisableDirectives` by default
+- Switched to parsing with `babel-eslint`
 
 ### Fixed
 

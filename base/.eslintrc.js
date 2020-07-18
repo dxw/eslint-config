@@ -4,13 +4,11 @@ const baseExtends = ["eslint:recommended"];
 const prettierExtends = ["prettier"];
 
 module.exports = {
+  parser: "babel-eslint",
   plugins: [...plugins],
   extends: [...baseExtends, ...prettierExtends],
   env: {
     es2020: true,
-  },
-  parserOptions: {
-    sourceType: "module",
   },
   reportUnusedDisableDirectives: true,
   overrides: [
