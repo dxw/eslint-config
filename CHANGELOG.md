@@ -8,6 +8,10 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added
+
+- Added config for React apps and libraries
+
 ### Changed
 
 - Enabled `reportUnusedDisableDirectives` by default

@@ -7,11 +7,17 @@
   "main": "base/index.js",
   "files": [
     "base/.eslintrc.js",
-    "base/index.js"
+    "base/index.js",
+    "react/.eslintrc.js",
+    "react/index.js",
+    "react-library/.eslintrc.js",
+    "react-library/index.js"
   ],
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": ">= 3",
     "eslint-plugin-prettier": ">= 3",
+    "eslint-plugin-react": ">= 7",
+    "eslint-plugin-react-hooks": ">= 3",
     "eslint": ">= 7",
     "prettier": ">= 2",
     "typescript": ">= 3"
@@ -22,11 +28,17 @@
     "eslint-config-prettier": "6.11.0"
   },
   "devDependencies": {
+    "@types/prop-types": "^15.7.3",
+    "@types/react": "^16.9.43",
     "@typescript-eslint/eslint-plugin": "^3.5.0",
     "eslint": "^7.3.1",
     "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-react-hooks": "^4.0.7",
     "jest": "^26.1.0",
     "prettier": "^2.0.5",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
     "typescript": "^3.9.6"
   },
   "scripts": {
